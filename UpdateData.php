@@ -37,8 +37,8 @@
                 </li>
                 <li class="submenu" id="logoset">
                     <a href="index.php">
-                        <img id="logo" src="images/lipstick-makeup.svg" /> <br />
-                        <img id="sneaker" src="images/lipstick_logo.png" />
+                        <img id="logo" src="images/Sneaker_logo.svg" /> <br />
+                        <img id="sneaker" src="images/logo_name.png" />
                     </a>
                 </li>
                 <li class="submenu">
@@ -55,9 +55,9 @@
     <ul id="ul">
         <form name="UpdateData" action="UpdateData.php" method="POST">
             <label>Store ID:</label>
-            <li><input type="text" name="LipstickID" /></li>
+            <li><input type="text" name="ToyID" /></li>
             <label>Accountant:</label>
-            <li><input type="text" name="LipstickName" /></li>
+            <li><input type="text" name="ToyName" /></li>
             <label>Revenue:</label>
             <li><input type="text" name="Price" /></li>
             <br>
@@ -89,7 +89,7 @@
     }
 
 
-    $sql = "UPDATE lipstick SET tname = '$_POST[LipstickName]', unitprice = '$_POST[Price]' WHERE lipstickid = '$_POST[LipstickID]'";
+    $sql = "UPDATE sneakertoy SET tname = '$_POST[ToyName]', unitprice = '$_POST[Price]' WHERE toyid = '$_POST[ToyID]'";
     $stmt = $pdo->prepare($sql);
 
     if (is_null($_POST[ToyID]) == FALSE) {

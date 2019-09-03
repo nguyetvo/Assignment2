@@ -43,8 +43,8 @@
                 </li>
                 <li class="submenu" id="logoset">
                     <a href="index.php">
-                        <img id="logo" src="images/lipstick-makeup.svg" /> <br />
-                        <img id="sneaker" src="images/lipstick_logo.png" />
+                        <img id="logo" src="images/Sneaker_logo.svg" /> <br />
+                        <img id="sneaker" src="images/logo_name.png" />
                     </a>
                 </li>
                 <li class="submenu">
@@ -60,9 +60,9 @@
         <ul id="ul">
             <form name="InsertData" action="InsertData.php" method="POST">
                 <label>Store ID:</label>
-                <li><input type="text" name="LipstickID" /></li>
+                <li><input type="text" name="ToyID" /></li>
                 <label>Accountant:</label>
-                <li><input type="text" name="LipstickName" /></li>
+                <li><input type="text" name="ToyName" /></li>
                 <label>Revenue:</label>
                 <li><input type="text" name="Price" /></li>
                 <br>
@@ -98,15 +98,15 @@
         //$stmt->bindParam(':id','SV03');
         //$stmt->bindParam(':name','Vo Thi Kim Nguyet');
         //$stmt->bindParam(':email', 'nguyetvtktcs19024@fpt.edu.vn');
-        //$stmt->bindParam(':class', 'BT010');
+        //$stmt->bindParam(':class', 'GCD018');
         //$stmt->execute();
         //$sql = "INSERT INTO student(stuid, fname, email, classname) VALUES('SV02', 'Nguyet Vo','nguyetvtk@fpt.edu.vn','TCS19024')";
-        $sql = "INSERT INTO lipstick(lipstickid, tname, unitprice)"
-            . " VALUES('$_POST[LipstickID]','$_POST[LipstickName]','$_POST[Price]')";
+        $sql = "INSERT INTO sneakertoy(toyid, tname, unitprice)"
+            . " VALUES('$_POST[ToyID]','$_POST[ToyName]','$_POST[Price]')";
         $stmt = $pdo->prepare($sql);
         //$stmt->execute();
-        if (is_null($_POST[LipstickID])) {
-            echo "LipstickID must be not null";
+        if (is_null($_POST[ToyID])) {
+            echo "ToyID must be not null";
         } else {
             if ($stmt->execute() == TRUE) {
                 echo "Record inserted successfully.";

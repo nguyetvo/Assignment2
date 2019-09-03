@@ -13,6 +13,7 @@
   body {
     background-color: #FA54F5;
     background-image: linear-gradient(62deg, #FA54F5 0%, #FDC3FD 100%);
+
   }
 </style>
 
@@ -35,8 +36,8 @@
         </li>
         <li class="submenu" id="logoset">
           <a href="index.php">
-            <img id="logo" src="images/lipstick-makeup.svg" /> <br />
-            <img id="sneaker" src="images/lipstick_logo.png" />
+            <img id="logo" src="images/Sneaker_logo.svg" /> <br />
+            <img id="sneaker" src="images/logo_name.png" />
           </a>
         </li>
         <li class="submenu">
@@ -64,8 +65,7 @@
     ));
   }
 
-  //$sql = "SELECT * FROM sneakertoy ORDER BY toyid";
-  $sql = "SELECT * FROM lipstick ORDER BY lipstickid";
+  $sql = "SELECT * FROM sneakertoy ORDER BY toyid";
   $stmt = $pdo->prepare($sql);
   $stmt->setFetchMode(PDO::FETCH_ASSOC);
   $stmt->execute();
@@ -89,7 +89,7 @@
           ?>
 
           <tr>
-            <td scope="row"><?php echo $row['lipstickid'] ?></td>
+            <td scope="row"><?php echo $row['toyid'] ?></td>
             <td><?php echo $row['tname'] ?></td>
             <td><?php echo $row['unitprice'] ?></td>
             <td><?php echo $row['checkdate'] ?></td>

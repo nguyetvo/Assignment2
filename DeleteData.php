@@ -29,13 +29,13 @@
 				</li>
 				<li class="submenu" id="logoset">
 					<a href="index.php">
-						<img id="logo" src="images/lipstick-makeup.svg" /> <br />
-						<img id="sneaker" src="images/lipstick_logo.png" />
+						<img id="logo" src="images/Sneaker_logo.svg" /> <br />
+						<img id="sneaker" src="images/logo_name.png" />
 					</a><br />
 
 					<form name="DeleteData" action="DeleteData.php" method="POST">
-						<p text-align: center;>Lipstick ID:</p>
-						<input type="text" name=LipstickID" /><br>
+						<p text-align: center;>Toy ID:</p>
+						<input type="text" name="ToyID" /><br>
 						<br>
 						<button type="submit" class="btn btn-primary">Delete</button>
 					</form>
@@ -71,10 +71,10 @@
 		));
 	}
 
-	$sql = "DELETE FROM lipstick WHERE lipstickid = '$_POST[LipstickID]'";
+	$sql = "DELETE FROM sneakertoy WHERE toyid = '$_POST[ToyID]'";
 	$stmt = $pdo->prepare($sql);
 
-	if (is_null($_POST[LipstickID]) == FALSE) {
+	if (is_null($_POST[ToyID]) == FALSE) {
 		if ($stmt->execute() == TRUE) {
 			echo "Record deleted successfully.";
 		} else {
@@ -82,7 +82,7 @@
 		}
 	}
 
-	 ?>
+	?>
 </body>
 
 </html>

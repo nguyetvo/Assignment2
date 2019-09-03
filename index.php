@@ -6,7 +6,7 @@
 	
         <link rel="stylesheet" href="style.css" />
 		
-        <title>NguyetVo </title>
+        <title>Azzy </title>
     </head>
 
     <body>
@@ -55,8 +55,8 @@
 						</li>
 						<li class="submenu" id="logoset">
 							<a href="index.php">
-								<img id="logo" src="images/lipstick-makeup.svg"/> <br/> 
-								<img id="sneaker" src="images/lipstick_logo.png"/>
+								<img id="logo" src="images/Sneaker_logo.svg"/> <br/> 
+								<img id="sneaker" src="images/logo_name.png"/>
 							</a>
 						</li>
 						<li class="submenu">
@@ -110,7 +110,7 @@
 					<div class="text_footer">
 						<h4>Got any questions?</h4>                    
 						<p class="links">
-							<a href="mailto:nguyetvtktcs19024@fpt.edu.vn">nguyetvocompany@gmail.com</a>	 
+							<a href="mailto:nguyetvocompany@gmail.com">nguyetvocompany@gmail.com</a>	 
 						</p>
 					</div>
                 </div>
@@ -144,7 +144,7 @@
 						<h4>Customer Service</h4>
 						<p class="links">
 							<a href="#" title="Shipping & Returns" >Shipping & Returns</a><br/>		      
-							<a href="mailto:nguyetvtktcs19024@fpt.edu.vn" title="Contact us" >Contact us</a>
+							<a href="mailto:nguyetvocompany@gmail.com" title="Contact us" >Contact us</a>
 						</p>
 					</div>
                 </div>
